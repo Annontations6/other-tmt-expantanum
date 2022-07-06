@@ -5,7 +5,7 @@ let modInfo = {
 	pointsName: "youtube",
 	discordName: "",
 	discordLink: "",
-	initialStartPoints: new OmegaNum(10), // Used for hard resets and new players
+	initialStartPoints: new ExpantaNum(10), // Used for hard resets and new players
 	
 	offlineLimit: 24,  // In hours
 }
@@ -28,7 +28,7 @@ let winText = `Congratulations! You have reached the end and beaten this game, b
 var doNotCallTheseFunctionsEveryTick = ["blowUpEverything"]
 
 function getStartPoints(){
-    return new OmegaNum(modInfo.initialStartPoints)
+    return new ExpantaNum(modInfo.initialStartPoints)
 }
 
 // Determines if it should show points/sec
@@ -41,7 +41,7 @@ function getPointGen() {
 	if(!canGenPoints())
 		return new OmegaNum(0)
 
-	let gain = new OmegaNum(1)
+	let gain = new ExpantaNum(1)
 	return gain
 }
 
