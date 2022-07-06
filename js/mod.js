@@ -42,6 +42,7 @@ function getPointGen() {
 		return new OmegaNum(0)
 
 	let gain = new ExpantaNum(1)
+	if (hasUpgrade("g", 11)) gain = gain.mul(2)
 	return gain
 }
 
