@@ -1,4 +1,4 @@
-addLayer("G", {
+addLayer("g", {
     name: "glitch", // This is optional, only used in a few places, If absent it just uses the layer id.
     symbol: "G", // This appears on the layer's node. Default is the id with the first letter capitalized
     position: 0, // Horizontal position within a row. By default it uses the layer id and sorts in alphabetical order
@@ -6,7 +6,7 @@ addLayer("G", {
         unlocked: true,
 		points: new ExpantaNum(0),
     }},
-    color: "#4BDC13",
+    color: "#00FFFF",
     requires: new ExpantaNum(10), // Can be a function that takes requirement increases into account
     resource: "glitch points", // Name of prestige currency
     baseResource: "points", // Name of resource prestige is based on
